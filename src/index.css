@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap&family=Roboto&display=swap");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* component styles */
+.title {
+  text-align: center;
+  font-weight: 600;
+  margin: 0.5rem 0 0.6rem;
+}
+
+.project-title {
+  margin: 0.4rem 0 0.5rem;
+  font-family: Roboto, "Lucida Sans Regular", sans-serif;
+}
+
+.content {
+  height: 100%;
+  padding: 0.5rem;
+  background-color: #f3f3f3;
+}
+
+.card {
+  width: 350px;
+  padding: 1.5rem;
+  margin: 0.5rem auto;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}

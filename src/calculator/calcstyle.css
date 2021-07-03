@@ -1,0 +1,90 @@
+.App {
+  background: #141414;
+  color: white;
+  padding: 15px;
+  position: relative;
+  width: 300px;
+  height: 560px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.display {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin: 20px auto;
+  text-align: right;
+  height: 120px;
+  overflow-x: scroll;
+}
+
+.buttons {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #221717;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.button {
+  background: #333;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+  transition: filter 0.3s ease-in;
+}
+
+.button:active,
+.button:focus {
+  filter: brightness(120%);
+}
+
+.button.zero {
+  width: 135px;
+  grid-column: 1 / span 2;
+  border-radius: 50px !important;
+  -webkit-border-radius: 50px !important;
+  -moz-border-radius: 50px !important;
+  -ms-border-radius: 50px !important;
+  -o-border-radius: 50px !important;
+}
+
+.button.function {
+  color: black;
+  background: #a5a5a5;
+}
+
+.button.operator {
+  background: #b4731d;
+}
+
+.bottom {
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background: #ddd;
+  bottom: 10px;
+  left: 50%;
+  border-radius: 4px;
+  transform: translateX(-50%);
+}
